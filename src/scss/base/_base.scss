@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-family: var(--ff-body);
+   font-size: 16px;
+   color: var(--grayish-blue);
+}
+
+body{
+   width: 100%;
+   margin: 0; 
+   padding: 0;   
+}
+
+h1,h2 {
+   font-family: var(--ff-title);
+}
+
+.title {
+   position: relative;
+   width: 100%;
+   font-size: 4.375em;
+   color: var(--very-dark-violet);
+   line-height: 1;
+
+   &::before {
+       content: '';
+       position: absolute;
+       width: 25%;
+       height: 2px;
+       background: var(--very-dark-violet);
+       top: -5%;
+   }
+}
+
+ul {
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+}
