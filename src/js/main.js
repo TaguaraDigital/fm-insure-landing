@@ -10,9 +10,9 @@ toggleMenu.addEventListener('click', () =>{
    toggleMenu.classList.toggle('toggle-menu--open');
  
    if (menuOpen)     {
-        toggleMenu.innerHTML = `<img src="../assets/images/icon-hamburger.svg" alt="">`
+        toggleMenu.innerHTML = `<img src="./assets/images/icon-hamburger.svg" alt="">`
     } else{
-        toggleMenu.innerHTML = `<img src="../assets/images/icon-close.svg" alt="">`
+        toggleMenu.innerHTML = `<img src="./assets/images/icon-close.svg" alt="">`
     }
     menuOpen = !menuOpen 
 
