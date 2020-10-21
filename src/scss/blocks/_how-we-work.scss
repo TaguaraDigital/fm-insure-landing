@@ -7,11 +7,16 @@
 .subtitle {
     font-size: 2.5em;
     margin-bottom: 1em;
+    
+    @include table {
+        margin-bottom: 0;
+        
+    }
 }
 
 .container{
     width: 100%;
-    padding: 2em;
+    padding: 2em 2em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +29,15 @@
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    
+    @include table {
+        padding: 2em 5em;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("../assets/images/bg-pattern-how-we-work-desktop.svg");
+
+    }
 }
 
 .btn {
@@ -36,5 +50,9 @@
     
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
+
+    @include table {
+        margin-bottom: 0;
+    }
 }
 

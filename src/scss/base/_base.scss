@@ -33,16 +33,22 @@ h1,h2 {
    &::before {
        content: '';
        position: absolute;
-       width: 30%;
-       height: 2px;
-       background: var(--very-dark-violet);
-       top: -50%;
+       width: 40%;
+       height: 1px;
+       background: var(--dark-grayish-violet);
+       top: -100%;
        left: 50%;
        transform: translateX(-50%);
    }
 
    @include table {
       font-size: 4.375em;
+      &::before {
+         top: -10%;
+         left: 0;
+         transform: translateX(0);
+      }
+
    }
 
 }

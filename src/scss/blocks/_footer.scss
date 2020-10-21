@@ -50,6 +50,14 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    @include table {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
 }
 
 .widget__menu {
