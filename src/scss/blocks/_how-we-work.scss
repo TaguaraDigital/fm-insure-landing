@@ -58,4 +58,10 @@
     
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
+
+    &:hover {
+        color: var(--dark-grayish-violet);
+        background: var(--very-light-gray);
+        border: 1px solid var(--very-light-gray);
+    }
 }
