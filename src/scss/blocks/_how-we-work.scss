@@ -1,48 +1,56 @@
 .how-we-work {
-    width: 100%;
-    height: 100%;
-    padding: 1.5em;
-}
+    position: relative;
 
-.subtitle {
-    font-size: 2.5em;
-    margin-bottom: 1em;
+    padding: 4em 2em;
+    margin-top: 10em;
+    margin-bottom: 2.5em;
+    margin-right: 1.5625em;
+    margin-left: 1.5625em;
+    
+    background-color: var(--dark-violet);
+    background-image: url("../assets/images/bg-pattern-how-we-work-mobile.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
     
     @include table {
-        margin-bottom: 0;
-        
+        padding: 3em 2em 1.5em 2em;
+        margin: 5em 10em;  
+        background-image: url("../assets/images/bg-pattern-how-we-work-desktop.svg");
     }
 }
 
 .container{
     width: 100%;
-    padding: 2em 2em 1em;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    
-    background-color: var(--dark-violet);
-    background-image: url("../assets/images/bg-pattern-how-we-work-mobile.svg");
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
+
     @include table {
-        padding: 2em 5em;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        background-image: url("../assets/images/bg-pattern-how-we-work-desktop.svg");
+    }
+}
 
+.subtitle {
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1;
+    
+    @include table {
+        width: 50%;
+        font-size: 3.625em; 
+        text-align: left;
     }
 }
 
 .btn {
     width: fit-content;
-    margin-bottom: 5em;
     padding: 1em 2.5em;
     line-height: 1em;
     text-transform: uppercase;
@@ -50,9 +58,4 @@
     
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
-
-    @include table {
-        margin-bottom: 0;
-    }
 }
-
