@@ -85,28 +85,38 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
-    @include table {
-        align-items: flex-start;
-        
-    }
 
     text-transform: uppercase;
 
-    h3 {
-        color: var(--grayish-blue);
-        margin-top: 1em;
-        margin-bottom: 1em;
+    @include table {
+        align-items: flex-start;
     }
+}
+
+.widget__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include table {
+        align-items: flex-start;
+    }
+}
+
+.widget__title {
+    color: var(--grayish-blue);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.widget__links{
+    color: var(--dark-violet);
+    line-height: 2;
+    border-bottom: 1px solid transparent; 
+    cursor: pointer;
     
-    p{
-        color: var(--dark-violet);
-        line-height: 2;
-        border-bottom: 1px solid transparent; 
-        cursor: pointer;
-        
-        &:hover {
-            border-bottom: 1px solid var(--dark-violet); 
-        }
+    &:hover {
+        border-bottom: 1px solid var(--dark-violet); 
     }
 }
