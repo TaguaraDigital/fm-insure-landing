@@ -1,5 +1,4 @@
 const toggleMenu = document.getElementById('toggle-menu');
-console.log(toggleMenu)
 const mainNav = document.getElementById('main-nav');
 const navItems = document.querySelectorAll('.nav__item');
 
